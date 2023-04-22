@@ -1,5 +1,5 @@
 /* Basic Style */
-body {
+.body {
   background-color: #f8f8f8;
   color: #333;
   font-family: Lato, sans-serif;
@@ -10,10 +10,10 @@ body {
   display: block;
   text-align: right;
 }
-.header img {
+.header__img {
   width: 100%;
 }
-.header .header__link {
+.header__link {
   font-family: fantasy, cursive;
 }
 
@@ -34,17 +34,17 @@ body {
 .section-add__form {
   display: flex;
 }
-ul {
+.section {
   margin:0;
   padding: 0px;
 }
-li, h3 {
+.section__item, .section__title {
   list-style:none;
 }
-input,button{
+input,.btn{
   outline:none;
 }
-button {
+.btn {
   background: none;
   border: 0px;
   color: #888;
@@ -53,11 +53,11 @@ button {
   font-family: Lato, sans-serif;
   cursor: pointer;
 }
-button:hover {
+.btn:hover {
   color: #3a3A3a;
 }
 /* Heading */
-h3,
+.section__title,
 label[for="section__title section-add__title"] {
   color: #333;
   font-weight: 700;
@@ -88,7 +88,7 @@ label[for="section__title section-add__title"] {
   display: block;
   margin: 0 0 20px;
 }
-input#section-add__input {
+.section-add__input {
   width: 318px;
 }
 
@@ -102,7 +102,7 @@ li {
   justify-content: space-between;
   align-items: center;
 }
-li > * {
+.section__item > * {
   vertical-align: middle;
 }
 
@@ -118,17 +118,17 @@ li > label {
 li >  input[type="text"] {
   width: 226px
 }
-button.section__delete-btn img {
+.section__delete-btn img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
-button.section__delete-btn img:hover {
+.section__delete-btn img:hover {
   transform: rotateZ(0);
 }
 
 /* Completed */
-ul#section-completed label {
+.section-completed label {
   text-decoration: line-through
   color: #888;
 }
@@ -138,11 +138,11 @@ ul li input[type=text] {
   display:none
 }
 
-ul li.section__edit-form input[type=text] {
+.section__edit-form input[type=text] {
   display:inline-block;
   width:224px
 }
 
-ul li.section__edit-form label {
+.section__edit-form label {
   display:none;
 }
